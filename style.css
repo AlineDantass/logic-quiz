@@ -1,0 +1,72 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container principal */
+#quiz-container {
+  margin: 20px auto;
+  max-width: 500px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+#quiz-container:hover {
+  transform: scale(1.02);
+}
+
+/* Botões */
+button {
+  display: block;
+  margin: 12px auto;
+  padding: 12px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  background: #0077cc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: #6a0dad;
+  transform: translateY(-2px);
+}
+
+/* Timer e Score */
+#score, #timer {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #0077cc;
+}
+
+/* Ranking */
+#ranking {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+#ranking li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: background 0.3s;
+}
+#ranking li:hover {
+  background: #e6f0ff;
+}

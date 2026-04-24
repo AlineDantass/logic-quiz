@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>LogicQuiz 🧠</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>LogicQuiz 🧠</h1>
+  
+  <!-- Setup do jogador -->
+  <div id="player-setup">
+    <input type="text" id="playerName" placeholder="Digite seu nome">
+    <button onclick="startGame()">Iniciar Jogo</button>
+  </div>
+
+  <!-- Área do quiz -->
+  <div id="quiz-container" style="display:none;"></div>
+  
+  <!-- Informações do jogo -->
+  <p id="score">Pontuação: 0</p>
+  <p id="timer">Tempo restante: 30s</p>
+  
+  <!-- Ranking -->
+  <h2>Ranking 🏆</h2>
+  <ul id="ranking"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
