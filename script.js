@@ -3,55 +3,57 @@ const questions = [
   {
     question: "Qual número completa a sequência? 3, 6, 12, 24, ?",
     options: ["36", "48", "30", "60"],
-    answer: "48"
+    answer: "48",
   },
   {
-    question: "Se Maria é mais alta que João e João é mais alto que Ana, quem é o mais baixo?",
+    question:
+      "Se Maria é mais alta que João e João é mais alto que Ana, quem é o mais baixo?",
     options: ["Maria", "João", "Ana", "Não é possível saber"],
-    answer: "Ana"
+    answer: "Ana",
   },
   {
     question: "Qual figura não pertence ao grupo? 🔺, ⚪, 🟦, 🟩",
     options: ["🔺", "⚪", "🟦", "🟩"],
-    answer: "⚪"
+    answer: "⚪",
   },
   {
     question: "Se hoje é terça-feira, que dia será daqui a 100 dias?",
     options: ["Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"],
-    answer: "Quinta-feira"
+    answer: "Quinta-feira",
   },
   {
     question: "Um pato tem 2 patas. Quantas patas têm 5 patos?",
     options: ["5", "10", "15", "20"],
-    answer: "10"
+    answer: "10",
   },
   {
-    question: "Se todos os quadrados são retângulos e alguns retângulos são azuis, podemos afirmar:",
+    question:
+      "Se todos os quadrados são retângulos e alguns retângulos são azuis, podemos afirmar:",
     options: [
       "Todos os quadrados são azuis",
       "Alguns quadrados podem ser azuis",
       "Nenhum quadrado é azul",
-      "Todos os retângulos são quadrados"
+      "Todos os retângulos são quadrados",
     ],
-    answer: "Alguns quadrados podem ser azuis"
+    answer: "Alguns quadrados podem ser azuis",
   },
   {
     question: "Qual número falta? 1, 4, 9, 16, ?",
     options: ["20", "25", "30", "36"],
-    answer: "25"
+    answer: "25",
   },
   {
     question: "Se 2 + 2 = 4 e 4 + 4 = 8, então 8 + 8 = ?",
     options: ["12", "14", "16", "18"],
-    answer: "16"
-  }
+    answer: "16",
+  },
 ];
 
 // Variáveis globais
 let score = 0;
 let currentQuestion = 0;
 let timer;
-let timeLeft = 15;
+let timeLeft = 30;
 let playerName = "";
 
 // Elementos DOM
@@ -75,7 +77,7 @@ function startGame() {
 // Exibir pergunta
 function showQuestion() {
   clearInterval(timer);
-  timeLeft = 15;
+  timeLeft = 30;
   updateTimer();
 
   quizContainer.innerHTML = "";
@@ -85,7 +87,7 @@ function showQuestion() {
     questionEl.textContent = q.question;
     quizContainer.appendChild(questionEl);
 
-    q.options.forEach(opt => {
+    q.options.forEach((opt) => {
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.onclick = () => checkAnswer(opt);
@@ -101,7 +103,6 @@ function showQuestion() {
         showQuestion();
       }
     }, 1000);
-
   } else {
     quizContainer.innerHTML = "<h2>Fim do Quiz!</h2>";
     updateRanking();
