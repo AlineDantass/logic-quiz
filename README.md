@@ -24,7 +24,7 @@ Jogo de lógica interativo com perguntas de múltipla escolha, sistema de pontua
 
 ## 🎯 Objetivo do projeto
 
-Este projeto foi desenvolvido com o objetivo de praticar lógica de programação, manipulação de DOM e construção de uma experiência interativa para o usuário.
+Projeto desenvolvido com foco em consolidar lógica de programação e criar uma experiência interativa simples para o usuário, simulando um sistema de quiz com ranking.
 
 ---
 
