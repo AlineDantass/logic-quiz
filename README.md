@@ -54,7 +54,8 @@ Projeto desenvolvido com foco em consolidar lógica de programação e criar uma
 - Criar níveis de dificuldade  
 - Melhorar o design da interface  
 - Implementar feedback visual (acerto/erro)
-- Inserir botão para retornar ao início quando o jogo finalizar 
+- Inserir botão para retornar ao início quando o jogo finalizar
+
 
 ---
 
