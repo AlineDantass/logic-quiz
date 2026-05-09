@@ -61,4 +61,9 @@ Projeto desenvolvido com foco em consolidar lógica de programação e criar uma
 
 ## 👩‍💻 Desenvolvido por
 
-Aline Dantas
+**Aline Dantas**
+Dev Front-End em formação | Background em Suporte de TI
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/devalinedantas)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AlineDantass)
+
